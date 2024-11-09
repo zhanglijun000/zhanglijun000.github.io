@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Win10怎么设置有线网络和WiFi网络优先级?Win10怎么设置有线网络和WiFi网络优先级？我们经常使用wifi网络，但是如果插入网线以后希望有限使用有线网络，该怎么设置呢？下面我们就来看看详细的设置教程，需要的朋友可以参考下 很多使用双网卡的网友可能遇到一种情况，比如笔记本电脑在插上网线后还是用WiFi，得手动关闭无线连接才能转换到有线连接。如何才能调整合适的网络优先级呢？一般来说，有两种方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Win10怎么设置有线网络和WiFi网络优先级?有线和WiFi同时连接优先使用WiFi上网设置方法">
+<meta property="og:url" content="http://example.com/2022/07/31/win10%E6%80%8E%E4%B9%88%E8%AE%BE%E7%BD%AE%E6%9C%89%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%92%8Cwifi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E7%BA%A7%E6%9C%89%E7%BA%BF%E5%92%8Cwifi%E5%90%8C%E6%97%B6%E8%BF%9E/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Win10怎么设置有线网络和WiFi网络优先级?Win10怎么设置有线网络和WiFi网络优先级？我们经常使用wifi网络，但是如果插入网线以后希望有限使用有线网络，该怎么设置呢？下面我们就来看看详细的设置教程，需要的朋友可以参考下 很多使用双网卡的网友可能遇到一种情况，比如笔记本电脑在插上网线后还是用WiFi，得手动关闭无线连接才能转换到有线连接。如何才能调整合适的网络优先级呢？一般来说，有两种方">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE001.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE002.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE01.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE02.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE03.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE05.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE06.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE07.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE08.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE09.png">
+<meta property="article:published_time" content="2022-07-31T06:16:15.000Z">
+<meta property="article:modified_time" content="2024-11-09T07:12:50.468Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE001.png">
+
+
+<link rel="canonical" href="http://example.com/2022/07/31/win10%E6%80%8E%E4%B9%88%E8%AE%BE%E7%BD%AE%E6%9C%89%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%92%8Cwifi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E7%BA%A7%E6%9C%89%E7%BA%BF%E5%92%8Cwifi%E5%90%8C%E6%97%B6%E8%BF%9E/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":"","permalink":"http://example.com/2022/07/31/win10%E6%80%8E%E4%B9%88%E8%AE%BE%E7%BD%AE%E6%9C%89%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%92%8Cwifi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E7%BA%A7%E6%9C%89%E7%BA%BF%E5%92%8Cwifi%E5%90%8C%E6%97%B6%E8%BF%9E/","path":"2022/07/31/win10怎么设置有线网络和wifi网络优先级有线和wifi同时连/","title":"Win10怎么设置有线网络和WiFi网络优先级?有线和WiFi同时连接优先使用WiFi上网设置方法"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Win10怎么设置有线网络和WiFi网络优先级?有线和WiFi同时连接优先使用WiFi上网设置方法 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">180</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/31/win10%E6%80%8E%E4%B9%88%E8%AE%BE%E7%BD%AE%E6%9C%89%E7%BA%BF%E7%BD%91%E7%BB%9C%E5%92%8Cwifi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E7%BA%A7%E6%9C%89%E7%BA%BF%E5%92%8Cwifi%E5%90%8C%E6%97%B6%E8%BF%9E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Win10怎么设置有线网络和WiFi网络优先级?有线和WiFi同时连接优先使用WiFi上网设置方法 | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Win10怎么设置有线网络和WiFi网络优先级?有线和WiFi同时连接优先使用WiFi上网设置方法
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-07-31 14:16:15" itemprop="dateCreated datePublished" datetime="2022-07-31T14:16:15+08:00">2022-07-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>Win10怎么设置有线网络和WiFi网络优先级?<br>Win10怎么设置有线网络和WiFi网络优先级？我们经常使用wifi网络，但是如果插入网线以后希望有限使用有线网络，该怎么设置呢？下面我们就来看看详细的设置教程，需要的朋友可以参考下</p>
+<p>很多使用双网卡的网友可能遇到一种情况，比如笔记本电脑在插上网线后还是用WiFi，得手动关闭无线连接才能转换到有线连接。如何才能调整合适的网络优先级呢？一般来说，有两种方法比较常用。</p>
+<p><strong>一、调整网络高级设置</strong><br>Windows默认有能够调节网络优先级的位置，Win7&#x2F;Win8.1&#x2F;Win10理论上都有这个功能，就在网络和共享中心，具体步骤如下：<br>1、在任务栏网络图标上点击右键，进入“网络和共享中心”<br>2、点击左边“更改适配器设置”<br>3、按键盘键Alt调出菜单栏，然后点击“高级→高级设置”  </p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE001.png"></p>
+<p>————————————————<br>版权声明：本文为CSDN博主「运乎之妙存乎心」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u010921682/article/details/88964982">https://blog.csdn.net/u010921682/article/details/88964982</a><br>4、此时在“适配器和绑定”标签页下可以对可用连接进行位置调整（点击某个连接后，按右边的上下箭头调整即可，如下图）<br>注意：如果你的电脑只连接了wifi，是看不到这个选项的，比如我的只有一个 【提供程序顺序】选项  </p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE002.png"></p>
+<p>所以会有用户反映自己的电脑没有“适配器和绑定”标签页，或者有些用户反映在Windows10中上述设置无法保存（据说微软在Win10中已经废掉了这个设置，我同事 win10就是使用了这种方法没有效果），此时该如何调整网络优先级呢？</p>
+<p>二、修改“接口跃点数”</p>
+<p>这个名词可能会让某些用户感到陌生，所谓“跃点”，即路由。一个路由为一个跃点。数据传输过程中需要经过多个网络，每个被经过的网络设备点（有能力路由的）叫做一个跃点，地址就是它的IP。跃点数是经过了多少个跃点的累加器，为了防止无用的数据包在网上流散。</p>
+<p>为路由指定所需跃点数的整数值（范围是 1 ~ 9999），它用来在路由表里的多个路由中选择与转发包中的目标地址最为匹配的路由，所选的路由具有最少的跃点数。跃点数能够反映跃点的数量、路径的速度、路径可靠性、路径吞吐量以及管理属性。</p>
+<p>好了，说说怎么通过修改这个数值来设置优先级。简单来说，如果电脑中存在多个连接，哪个连接的跃点数小，哪个优先级就高。但也别任性自定义，还得按照基本法则，也就是实际情况来设置，一般设置方法如下：</p>
+<p>1、进入网络和共享中心→更改适配器设置</p>
+<p>2、在要修改的连接上点右键，选择“属性”  </p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE01.png"></p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE02.png"></p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE03.png"></p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE05.png"></p>
+<p>3、双击“Internet协议版本4（TCP&#x2F;IPv4）”（如果是IPv6就选择下面的“Internet协议版本6”，设置方法都一样）  </p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE06.png"></p>
+<p>4、点击右下角的“高级”，然后取消勾选“IP设置”标签页下面的“自动跃点”  </p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE07.png"></p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE08.png"></p>
+<p>5、如果这是高优先级连接，就把“接口跃点数”改为10，如果是低优先级连接，就改为20<br>这样改首先是因为已经有很多用户试用成功，特别是第一种方法无效的用户。至于说为什么改为10（一般用于有线网）和20（一般用于无线网）  </p>
+<p><img src="https://www.12361236.com:6688/%E5%90%8C%E6%97%B6%E8%BF%9E%E6%9C%89%E7%BA%BFWiFi%E7%BD%91%E7%BB%9C%E4%BC%98%E5%85%88%E8%AE%BE%E7%BD%AE09.png"></p>
+<p>不过还是提醒各位用户，接口跃点数最好还是使用默认的“自动跃点”比较稳妥，而且经过测试，在Win10中，使用双网卡的设备很多都把有线网的优先级安排的更高。如果你的设备的确没有按照你的要求设置网络优先级，可以通过上述方法进行修改。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/07/31/%E5%A4%8F%E6%99%AE%E6%89%93%E5%8D%B0%E6%9C%BA%E8%AE%BE%E7%BD%AE%E6%89%93%E5%8D%B0%E6%9C%BAip%E6%96%B9%E6%B3%95%E5%A4%8F%E6%99%AE201nv%E5%A4%8D%E5%8D%B0%E6%9C%BA%E8%AE%BE%E7%BD%AE%E4%BF%AE%E6%94%B9ip/" rel="prev" title="夏普打印机设置打印机IP方法夏普201NV复印机设置修改IP地址的操作步骤">
+                  <i class="fa fa-angle-left"></i> 夏普打印机设置打印机IP方法夏普201NV复印机设置修改IP地址的操作步骤
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/07/31/win10%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%EF%BC%8C%E6%8F%90%E7%A4%BA%E6%93%8D%E4%BD%9C%E6%97%A0%E6%B3%95%E5%AE%8C%E6%88%90%EF%BC%8C%E8%AF%B7%E6%A3%80%E6%9F%A5%E6%89%93%E5%8D%B0%E6%9C%BA%E5%90%8D/" rel="next" title="win10共享打印，提示操作无法完成，请检查打印机名并重试，指定的网络名不可再用，(错误0x00000709)，(错误00000040)">
+                  win10共享打印，提示操作无法完成，请检查打印机名并重试，指定的网络名不可再用，(错误0x00000709)，(错误00000040) <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
