@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+<meta name="theme-color" content="#008B00"><meta name="generator" content="Hexo 7.3.0">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg" color="#008B00">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -17,32 +17,32 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"12361238.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#008B00","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":"sure","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="一般普通路由器只要做完端口映射，NAT是不需要设置的，稍微高级点的路由器，就需要配置一下了。然后就可以访问了。   {alert type&#x3D;”info”}下面是网站找的说明：(下面的说明都2007年左右，原理没问题，不过现在所有的路由器都应该支持“回流”了){&#x2F;alert} 简单说明一下： 假设你的外网IP为 202.1.1.1 内网有2台192.168.1.10 192.16">
 <meta property="og:type" content="article">
 <meta property="og:title" content="内网的用户不能用外网IP访问内网">
-<meta property="og:url" content="http://example.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:url" content="http://12361238.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/index.html">
+<meta property="og:site_name" content="Hello Word">
 <meta property="og:description" content="一般普通路由器只要做完端口映射，NAT是不需要设置的，稍微高级点的路由器，就需要配置一下了。然后就可以访问了。   {alert type&#x3D;”info”}下面是网站找的说明：(下面的说明都2007年左右，原理没问题，不过现在所有的路由器都应该支持“回流”了){&#x2F;alert} 简单说明一下： 假设你的外网IP为 202.1.1.1 内网有2台192.168.1.10 192.16">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.12361236.com:6688/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91IP%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%911.jpg">
 <meta property="og:image" content="https://www.12361236.com:6688/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91IP%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%912.jpg">
 <meta property="article:published_time" content="2022-07-31T05:50:43.000Z">
 <meta property="article:modified_time" content="2024-11-09T07:12:50.418Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="zhang">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://www.12361236.com:6688/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91IP%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%911.jpg">
 
 
-<link rel="canonical" href="http://example.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/">
+<link rel="canonical" href="http://12361238.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":"","permalink":"http://example.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/","path":"2022/07/31/内网的用户不能用外网ip访问内网/","title":"内网的用户不能用外网IP访问内网"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"http://12361238.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/","path":"2022/07/31/内网的用户不能用外网ip访问内网/","title":"内网的用户不能用外网IP访问内网"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>内网的用户不能用外网IP访问内网 | Hexo</title>
+<title>内网的用户不能用外网IP访问内网 | Hello Word</title>
   
 
 
@@ -64,7 +64,10 @@
     <div class="column">
       <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -72,22 +75,54 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <p class="site-title">Hexo</p>
+      <p class="site-title">Hello Word</p>
       <i class="logo-line"></i>
     </a>
+      <p class="site-subtitle" itemprop="description">欢迎来到我的世界</p>
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
         
@@ -97,10 +132,10 @@
     <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
@@ -112,20 +147,21 @@
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+  <p class="site-author-name" itemprop="name">zhang</p>
+  <div class="site-description" itemprop="description">有钱终成眷属，没钱亲眼目睹</div>
 </div>
 <div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">180</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-count">175</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+          <a href="/categories/">
         <span class="site-state-item-count">7</span>
-        <span class="site-state-item-name">categories</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
   </nav>
 </div>
@@ -150,21 +186,21 @@
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2022/07/31/%E5%86%85%E7%BD%91%E7%9A%84%E7%94%A8%E6%88%B7%E4%B8%8D%E8%83%BD%E7%94%A8%E5%A4%96%E7%BD%91ip%E8%AE%BF%E9%97%AE%E5%86%85%E7%BD%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
+      <meta itemprop="name" content="zhang">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="内网的用户不能用外网IP访问内网 | Hexo">
+      <meta itemprop="name" content="内网的用户不能用外网IP访问内网 | Hello Word">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
@@ -178,22 +214,22 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Posted on</span>
+      <span class="post-meta-item-text">发表于</span>
 
-      <time title="Created: 2022-07-31 13:50:43" itemprop="dateCreated datePublished" datetime="2022-07-31T13:50:43+08:00">2022-07-31</time>
+      <time title="创建时间：2022-07-31 13:50:43" itemprop="dateCreated datePublished" datetime="2022-07-31T13:50:43+08:00">2022-07-31</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
       </span>
-      <span class="post-meta-item-text">In</span>
+      <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
         </span>
@@ -216,7 +252,7 @@
 <p>假设你的外网IP为 202.1.1.1 内网有2台192.168.1.10 192.168.1.11</p>
 <p>做了IP地址映射 202.1.1.1:80-&gt;192.168.1.10:80</p>
 <p>1。公网PC1访问你的站点</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PC1:X-&gt;202.1.1.1:80   (1个session 包含：[source ip:source  port , desti p:dest port]4个参数 )</span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">PC1</span>:X-&gt;<span class="number">202.1.1.1:80</span>   (<span class="number">1</span>个session 包含：[source ip:source  port , desti p:dest port]<span class="number">4</span>个参数 )</span><br></pre></td></tr></table></figure>
 
 <p>地址转换后： pc1:x-&gt;192.168.1.0:80</p>
 <p>192.168.1.0 到数据后，发数据给源站点</p>
@@ -283,9 +319,9 @@
     <span class="with-love">
       <i class="fa fa-heart"></i>
     </span>
-    <span class="author" itemprop="copyrightHolder">John Doe</span>
+    <span class="author" itemprop="copyrightHolder">zhang</span>
   </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
 
     </div>
@@ -298,7 +334,7 @@
     <span class="toggle-line"></span>
   </div>
   <div class="sidebar-dimmer"></div>
-  <div class="back-to-top" role="button" aria-label="Back to top">
+  <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up fa-lg"></i>
     <span>0%</span>
   </div>
@@ -312,7 +348,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
 
 
 
