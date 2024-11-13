@@ -149,7 +149,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">175</span>
+          <span class="site-state-item-count">177</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -172,6 +172,218 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/11/14/linux%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E7%BB%9F%E4%BF%A1UOS%EF%BC%8Cdeepin%EF%BC%8C%E9%BA%92%E9%BA%9F%EF%BC%8C%E7%BA%A2%E6%97%97%E5%9B%BD%E4%BA%A7%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/11/14/linux%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E7%BB%9F%E4%BF%A1UOS%EF%BC%8Cdeepin%EF%BC%8C%E9%BA%92%E9%BA%9F%EF%BC%8C%E7%BA%A2%E6%97%97%E5%9B%BD%E4%BA%A7%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">linux打印机共享统信UOS，deepin，麒麟，红旗国产系统共享打印机方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-11-14 03:42:50 / 修改时间：03:44:32" itemprop="dateCreated datePublished" datetime="2024-11-14T03:42:50+08:00">2024-11-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>原文链接<a target="_blank" rel="noopener" href="https://bbs.deepin.org/post/263618">https://bbs.deepin.org/post/263618</a></p>
+<p>deepin里你打开打印机共享后，就能访问<a href="https://IP:631访问CUPS的后台管理页面。但很可惜，包括deepin在内的国产linux虽然底层用CUPS，但共享的时候还是要去绕路使用win共享，也就是SMB">https://IP:631访问CUPS的后台管理页面。但很可惜，包括deepin在内的国产linux虽然底层用CUPS，但共享的时候还是要去绕路使用win共享，也就是SMB</a></p>
+<p>而CUPS支持一个叫IPP Everywhere的协议，该协议旨在推进打印机无驱动共享功能。CUPS早在十几年前就支持这个，而win不支持，但可以添加CUPS的打印机，而且也不用驱动。</p>
+<p>这是背景介绍。</p>
+<p>那么CUPS共享的优缺点就比较明显了。</p>
+<p>优点：</p>
+<p>1.无需驱动，在任何客户端都无需驱动，无论win，linux，Android，（苹果系统我没有，存疑）</p>
+<p>2.只要能访问到客户端ip的，都可以添加打印机，而不需要向win共享那样限制同一网段。</p>
+<p>缺点：</p>
+<p>1.支持的机器少。其实打印机本身不需要支持CUPS或者IPP Everywhere，这是由CUPS来支持的。打印机只需要有linux驱动以保证在本机能够正常使用。但有linux驱动本身就不多了</p>
+<p>2.同上，由于linux本身的驱动限制，可能有部分高级功能支持不完善，比如彩印，比如双面等等，这个要看具体打印机的情况。</p>
+<p>关于操作，对于共享服务端，很简单，就是正常打开打印机共享，能正常访问<a href="http://IP:631的后台即可。">http://IP:631的后台即可。</a></p>
+<p>打印机共享的地址就在这个页面的prints选项卡，点击打印机，之后的地址，比如我的</p>
+<p><a target="_blank" rel="noopener" href="http://192.168.10.20/printers/Pantum-M7100DN-series">http://192.168.10.20/printers/Pantum-M7100DN-series</a></p>
+<p>记住这个地址，一切添加操作都需要这个地址</p>
+<p>deepin&#x2F;UOS：</p>
+<p>直接在打印管理里点+添加打印机，选URL添加，输入上面那个地址，下面自动切换成Everywhere无驱方案，点确定直接成功。</p>
+<p>win：</p>
+<p>1.手动添加打印机<br>2.选择“使用ip地址或主机名添加打印机”</p>
+<p>3.下一页，设备类型选ipp设备，在地址栏同样输入上述地址，点确定直接完成，同样无需任何驱动。</p>
+<p>（这里要注意虽然设备类型是ipp，但地址仍然是上面那个，也就是http开头，而不是ipp:&#x2F;&#x2F;开头）</p>
+<p>Android：</p>
+<p>要在安卓上使用无需驱动的CUPS打印机需要CUPS的官方app，CUPS Printing<br>谷歌商店的地址是<a target="_blank" rel="noopener" href="https://play.google.com/store/ap">https://play.google.com/store/ap</a> … rint&amp;hl&#x3D;en_US&amp;gl&#x3D;US<br>这个app久未更新，但好在还可以正常使用。最新的版本是在2018年的1.5，你也可以在f-driod下载到它</p>
+<p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/io.github.benoitduffez.cupsprint">https://f-droid.org/zh_Hans/packages/io.github.benoitduffez.cupsprint</a></p>
+<p>由于是2018年的app，有可能有各种不兼容问题，尤其是Android13等高版本，目前我使用不太成功，你可以自己试试。</p>
+<p>反正事就是这么个事，有而且早就有，win不支持，但可以无驱添加</p>
+<p>所以只要涉及多系统共享打印机，且打印机有linux驱动，其实从linux共享要方便的多。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/11/14/%E7%BB%9F%E4%BF%A1%E6%A1%8C%E9%9D%A2%E4%B8%93%E4%B8%9A%E7%89%88%E3%80%90%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E3%80%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/11/14/%E7%BB%9F%E4%BF%A1%E6%A1%8C%E9%9D%A2%E4%B8%93%E4%B8%9A%E7%89%88%E3%80%90%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E3%80%91%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="post-title-link" itemprop="url">统信桌面专业版【打印机共享】解决方案</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-11-14 03:17:30 / 修改时间：03:39:51" itemprop="dateCreated datePublished" datetime="2024-11-14T03:17:30+08:00">2024-11-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>原链接<a target="_blank" rel="noopener" href="https://faq.uniontech.com/desktop/peripheral/2a49/6f3a#header-9">https://faq.uniontech.com/desktop/peripheral/2a49/6f3a#header-9</a></p>
+<p>全文导读：本文主要介绍三种不同情况的打印机共享方式：1、UOS电脑连接的打印机共享给UOS电脑（以下简称UOS共享给UOS）；2、UOS电脑连接的打印机共享给Windows电脑（以下简称UOS共享给Windows）；3、Windows电脑连接的打印机共享给UOS电脑（以下简称Windows共享给UOS）。</p>
+<p>方案列项</p>
+<p>1、UOS电脑连接的打印机共享给UOS电脑（以下简称UOS共享给UOS）；</p>
+<p>2、UOS电脑连接的打印机共享给Windows电脑（以下简称UOS共享给Windows）；</p>
+<p>3、Windows电脑连接的打印机共享给UOS电脑（以下简称Windows共享给UOS）。</p>
+<p>方法一：UOS共享给UOS</p>
+<p>说明：此方案适用于该办公室只有一台直连打印机连接UOS，整个办公室都是UOS或是很少的window，那就使用UOS共享打印机。</p>
+<p>步骤一</p>
+<p>将打印机直连UOS电脑，并调试好确保UOS电脑直连的打印机能够正常打印，打印机安装调试方法见统信桌面专业版【利旧打印机】调试方法与步骤介绍</p>
+<p>步骤二</p>
+<p>打印机共享设置，UOS系统打印机共享可在「打印管理器」中进行设置，在「设置」选项中勾选 「发布连接到这个系统的共享打印机」和[允许从互联网打印]即可。<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%881.png"><br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%882.png"><br>注意：不要勾选”保留调试信息用于故障排除”，因为一旦出现故障会导致调试日志撑爆本地硬盘空间。除非是调查打印机故障时可以临时打开此调试功能。</p>
+<p>步骤三</p>
+<p>连接共享打印机在局域网中设置好需要共享的打印机后，其他主机就可以通过「打印管理器」连接至共享的打印机，</p>
+<p>查看共享打印机电脑的ip地址，在「打印管理器」中输入对应电脑的ip进行查找，在出现共享打印机后选择安装即可，</p>
+<p>步骤参考 外设安装经验分享 中的内容。<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%883.png"><br>方法二：UOS共享给Windows</p>
+<p>步骤一</p>
+<p>开启共享设置方法同方法一中的步骤二<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%884.png"><br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%885.png"><br>步骤二</p>
+<p>windows作为客户端连接共享打印机</p>
+<p>设置里面添加打印机<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%886.png"><br>步骤三</p>
+<p>输入共享的IP地址和打印机名称，名称就是打印管理器里面显示的打印机的名字<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%887.png"><br>如果不确认打印机名称，也可以先访问网络节点，再从网络共享界面中选中共享打印机设备进行添加。</p>
+<p>步骤四</p>
+<p>然后按照步骤操作完成即可，安装打印机时会出现打印机驱动选择，请根据共享打印机品牌及型号选择合适驱动加载（如果系统默认驱动未能匹配共享打印机型号，也可从打印机官网下载合适驱动手动安装），最后打印测试页，等待uos连接的打印机可以打印出来则表示设置完成。<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%888.png"><br>方法三：Windows共享给UOS</p>
+<p>说明：此方案适用于该办公室只有一台直连打印机连接window，整个办公室都是UOS，那就使用window共享打印机</p>
+<p>步骤一</p>
+<p>windows提供共享作为打印服务器注意：控制中心选择启用或关闭windows功能，打开LPD打印服务，如果需要请关闭windows防火墙。<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%889.png"><br>步骤二</p>
+<p>选择打印机属性共享打印机，建议共享名称设置一个方便记忆，没有空格的名字。否则UOS下共享空格还需要转义符定义。（转义时使用%20表示空格）<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%8810.png"><br>步骤三</p>
+<p>UOS添加windows共享的打印机在UOS电脑上打开打印管理器，选择URL添加打印机；<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%8811.png"><br>步骤四</p>
+<p>选择对应的驱动<br><img src="https://www.12361236.com:6688/%E5%9B%BD%E4%BA%A7%E7%BB%9F%E4%BF%A1%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%AE%98%E6%96%B9%E7%89%8812.png"><br>注意：部分惠普打印机共享成功，但是无法正常打印，这个是由于惠普打印机驱动的协议的特殊性导致跨系统共享，会存在部分型号无法打印的问题。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -941,181 +1153,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>大疆v2眼睛连接手机软件DigiView_1.0.0_Beta.apk <a target="_blank" rel="noopener" href="https://www.12361236.com:6688/%E5%A4%A7%E7%96%86v2%E7%9C%BC%E7%9D%9B%E8%BF%9E%E6%8E%A5%E6%89%8B%E6%9C%BA%E8%BD%AF%E4%BB%B6DigiView_1.0.0_Beta.apk">下载</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/06/10/%E5%A4%8F%E6%99%AE2522%E7%B3%BB%E5%88%97%E8%BF%9B%E5%85%A5%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F%E5%BC%80%E5%90%AFusb%E7%AB%AF%E5%8F%A3%E6%89%93%E5%8D%B0%E6%89%AB%E6%8F%8F%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/06/10/%E5%A4%8F%E6%99%AE2522%E7%B3%BB%E5%88%97%E8%BF%9B%E5%85%A5%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F%E5%BC%80%E5%90%AFusb%E7%AB%AF%E5%8F%A3%E6%89%93%E5%8D%B0%E6%89%AB%E6%8F%8F%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">夏普2522系列进入工程模式开启USB端口打印扫描方法</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-10 09:52:27" itemprop="dateCreated datePublished" datetime="2024-06-10T09:52:27+08:00">2024-06-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">打印机知识</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>首先进入工程模式</p>
-<ol>
-<li>机器在复印模式: 依次按下：<strong># * C *</strong> → <strong>26</strong> →开始→<strong>50</strong>→开始，选择第三个3. USB DEVICE 按确认把 <strong>0</strong> 改成 <strong>1</strong> 。按 <strong>C</strong> 退出模式即可</li>
-</ol>
-<p><img src="https://www.12361236.com:6688/%E5%A4%8F%E6%99%AE2522%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F.png"></p>
-<p>打印机密码00000打印机网络管理员密码admin</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/06/07/wordpress-6-5-3-zh-cn-zip/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/06/07/wordpress-6-5-3-zh-cn-zip/" class="post-title-link" itemprop="url">wordpress-6.5.3-zh_CN.zip</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-07 23:18:21" itemprop="dateCreated datePublished" datetime="2024-06-07T23:18:21+08:00">2024-06-07</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">工具软件</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>wordpress-6.5.3-zh_CN.zip <a target="_blank" rel="noopener" href="https://www.12361236.com:6688/wordpress-6.5.3-zh_CN.zip">下载</a></p>
 
       
     </div>
