@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#008B00"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#008B00">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"12361238.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#008B00","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":"sure","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="原文地址https:&#x2F;&#x2F;knowbot.hikvision.com&#x2F;webchatbot-pc&#x2F;#&#x2F;sharingPath?params&#x3D;365417&amp;sysNum&#x3D;1693447044565&amp;type&#x3D;1 当前有多款工具软件可用于操作设备密码重置，且工具还具备多种设备调试能力，您可根据工具特性选择使用    工具软件1：海康交付助手【hot，推荐使用】    下载地址：https">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【密码重置】工具软件下载及操作说明：海康交付助手&#x2F;SADP&#x2F;400密码重置助手">
+<meta property="og:url" content="http://12361238.com/2024/11/19/%E3%80%90%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E3%80%91%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E%EF%BC%9A%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8B-SADP-400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B/index.html">
+<meta property="og:site_name" content="Hello Word">
+<meta property="og:description" content="原文地址https:&#x2F;&#x2F;knowbot.hikvision.com&#x2F;webchatbot-pc&#x2F;#&#x2F;sharingPath?params&#x3D;365417&amp;sysNum&#x3D;1693447044565&amp;type&#x3D;1 当前有多款工具软件可用于操作设备密码重置，且工具还具备多种设备调试能力，您可根据工具特性选择使用    工具软件1：海康交付助手【hot，推荐使用】    下载地址：https">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B1.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B2.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B3.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B4.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B5.png">
+<meta property="og:image" content="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B6.png">
+<meta property="article:published_time" content="2024-11-19T03:24:25.000Z">
+<meta property="article:modified_time" content="2024-11-19T03:30:15.960Z">
+<meta property="article:author" content="Parzival">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B1.png">
+
+
+<link rel="canonical" href="http://12361238.com/2024/11/19/%E3%80%90%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E3%80%91%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E%EF%BC%9A%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8B-SADP-400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":"","permalink":"http://12361238.com/2024/11/19/%E3%80%90%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E3%80%91%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E%EF%BC%9A%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8B-SADP-400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B/","path":"2024/11/19/【密码重置】工具软件下载及操作说明：海康交付助手-SADP-400密码重置助手/","title":"【密码重置】工具软件下载及操作说明：海康交付助手/SADP/400密码重置助手"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>【密码重置】工具软件下载及操作说明：海康交付助手/SADP/400密码重置助手 | Hello Word</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hello Word</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">欢迎来到我的世界</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Parzival</p>
+  <div class="site-description" itemprop="description">有钱终成眷属，没钱亲眼目睹</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">178</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/11/19/%E3%80%90%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E3%80%91%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E%EF%BC%9A%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8B-SADP-400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="【密码重置】工具软件下载及操作说明：海康交付助手/SADP/400密码重置助手 | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【密码重置】工具软件下载及操作说明：海康交付助手/SADP/400密码重置助手
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-11-19 11:24:25 / 修改时间：11:30:15" itemprop="dateCreated datePublished" datetime="2024-11-19T11:24:25+08:00">2024-11-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">其他知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>原文地址<a target="_blank" rel="noopener" href="https://knowbot.hikvision.com/webchatbot-pc/#/sharingPath?params=365417&sysNum=1693447044565&type=1">https://knowbot.hikvision.com/webchatbot-pc/#/sharingPath?params=365417&amp;sysNum=1693447044565&amp;type=1</a></p>
+<p>当前有多款工具软件可用于操作设备密码重置，且工具还具备多种设备调试能力，您可根据工具特性选择使用</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>工具软件1：海康交付助手【hot，推荐使用】</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://partners.hikvision.com/tools/tooldetail?id=718096962743238656">https://partners.hikvision.com/tools/tooldetail?id=718096962743238656</a></p>
+<p>支持对设备进行单台或批量配置和管理（包含但不限于在线发现&#x2F;搜索查询设备IP、设备激活、设备配网、校时、版本升级、视频参数设置、OSD设置等，具体可参考新版批量配置工具&#x2F;升级版SADP【海康交付助手】使用指导及常见问题）</p>
+<p>密码重置界面路径及操作方式见下图：<br><img src="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B1.png"><br><img src="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B2.png"><br>您可能感兴趣的问题：</p>
+<p>【】如何通过工具软件操作设备密码重置？具体流程请参考：通过工具软件操作设备密码重置</p>
+<p>【】手机扫码如何操作？请参考：【密码重置】手机扫码获取重置口令（安全码或xml文件）</p>
+<p>【】手机扫码未直接获取到重置口令&#x2F;安全码？请参考：【密码重置】手机扫码可能遇到的问题&#x2F;提示及其操作建议</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>工具软件2：设备网络搜索“SADP”</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://partners.hikvision.com/tools/tooldetail?id=599912016971890688">https://partners.hikvision.com/tools/tooldetail?id=599912016971890688</a></p>
+<p>主要用于设备发现、激活和配网</p>
+<p>密码重置界面路径及操作方式见下图：<br><img src="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B3.png"><br>如未找到“忘记密码”选项，可能是没有打开“修改网络参数”页签，请按下图，点击三角处展开页签<br><img src="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B4.png"></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>工具软件3：SADP V3.0.5.7</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://drive.ticklink.com/hcs/controller/hik-manage/fileDownload?link=0HPRDlKK">https://drive.ticklink.com/hcs/controller/hik-manage/fileDownload?link=0HPRDlKK</a></p>
+<p>该版本适用于导出设备特征码xml文件并上传自助平台获取重置口令方式</p>
+<p>具体操作请参考：【合作伙伴平台密码重置】熟手模式操作指导</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>工具软件4：400密码重置助手</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.hikvision.com/cn/password-reset/">https://www.hikvision.com/cn/password-reset/</a></p>
+<p>单台设备扫码操作，需使用公众号密码重置工具扫码</p>
+<p>密码重置界面路径及操作方式见下图：<br><img src="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B5.png"><br><img src="https://www.12361236.com:6688/%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8BSADP400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B6.png"></p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>工具软件5：400SADP</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://drive.ticklink.com/hcs/controller/hik-manage/fileDownload?link=OOeWailP&">https://drive.ticklink.com/hcs/controller/hik-manage/fileDownload?link=OOeWailP&amp;</a> 提取码:4w3w</p>
+<p>功能等同于400密码重置助手，如已经使用过多个工具软件或版本均无法成功重置且是较老的设备，可尝试使用该软件的“勾选单台设备后导出密文”方式进行重置口令的获取</p>
+<p>导出设备特征码xml文件并上传自助平台获取重置口令方式</p>
+<p>具体操作请参考：【合作伙伴平台密码重置】熟手模式操作指导</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/11/14/linux%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E7%BB%9F%E4%BF%A1UOS%EF%BC%8Cdeepin%EF%BC%8C%E9%BA%92%E9%BA%9F%EF%BC%8C%E7%BA%A2%E6%97%97%E5%9B%BD%E4%BA%A7%E7%B3%BB%E7%BB%9F%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E6%96%B9%E6%B3%95/" rel="prev" title="linux打印机共享统信UOS，deepin，麒麟，红旗国产系统共享打印机方法">
+                  <i class="fa fa-angle-left"></i> linux打印机共享统信UOS，deepin，麒麟，红旗国产系统共享打印机方法
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Parzival</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
