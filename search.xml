@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>hexo d上传后gitHub 中custom domain 被重置清除</title>
+      <link href="/2024/11/19/hexo-d%E4%B8%8A%E4%BC%A0%E5%90%8EgitHub-%E4%B8%ADcustom-domain-%E8%A2%AB%E9%87%8D%E7%BD%AE%E6%B8%85%E9%99%A4/"/>
+      <url>/2024/11/19/hexo-d%E4%B8%8A%E4%BC%A0%E5%90%8EgitHub-%E4%B8%ADcustom-domain-%E8%A2%AB%E9%87%8D%E7%BD%AE%E6%B8%85%E9%99%A4/</url>
+      
+        <content type="html"><![CDATA[<p>原文地址：<a href="https://blog.csdn.net/weixin_49175501/article/details/128705141">https://blog.csdn.net/weixin_49175501/article/details/128705141</a><br><strong>问题背景</strong><br>通过hexo构建的个人博客，托管在gitHub上，并在setting &#x3D;&gt; pages &#x3D;&gt; Custom domain 中将自己的域名与gitHub路径绑定。这样可直接通过自己的域名访问博客了。<br><strong>问题描述</strong><br>项目在执行hexo clean &#x3D;&gt; hexo generate &#x3D;&gt; hexo deploy后gitHub上的Custom domain 填写的域名被重置清除了。<br><strong>解决问题</strong><br>在项目的source文件夹下添加一个CNAME文件，在文件中填写自己的域名地址<br>这样配置就OK了。再次hexo deploy上传Custom domain中的内容就不会被重置了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他知识 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【密码重置】工具软件下载及操作说明：海康交付助手/SADP/400密码重置助手</title>
       <link href="/2024/11/19/%E3%80%90%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E3%80%91%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E%EF%BC%9A%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8B-SADP-400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B/"/>
       <url>/2024/11/19/%E3%80%90%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E3%80%91%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD%E5%8F%8A%E6%93%8D%E4%BD%9C%E8%AF%B4%E6%98%8E%EF%BC%9A%E6%B5%B7%E5%BA%B7%E4%BA%A4%E4%BB%98%E5%8A%A9%E6%89%8B-SADP-400%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE%E5%8A%A9%E6%89%8B/</url>
