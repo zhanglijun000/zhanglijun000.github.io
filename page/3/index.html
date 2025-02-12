@@ -151,7 +151,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">188</span>
+          <span class="site-state-item-count">189</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -174,6 +174,140 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/07/18/python-%E4%BF%AE%E6%94%B9-pip-%E6%BA%90%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/07/18/python-%E4%BF%AE%E6%94%B9-pip-%E6%BA%90%E4%B8%BA%E5%9B%BD%E5%86%85%E6%BA%90/" class="post-title-link" itemprop="url">Python 修改 pip 源为国内源</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-07-18 17:08:58" itemprop="dateCreated datePublished" datetime="2024-07-18T17:08:58+08:00">2024-07-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">服务器搭建知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>原文链接<a target="_blank" rel="noopener" href="https://juejin.cn/post/7141566114412101662">https://juejin.cn/post/7141566114412101662</a></p>
+<p>1.临时换源：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">ruby复制代码<span class="comment">#清华源</span></span><br><span class="line">pip install markdown -i https:<span class="regexp">//</span>pypi.tuna.tsinghua.edu.cn/simple</span><br><span class="line"></span><br><span class="line"><span class="comment"># 阿里源</span></span><br><span class="line">pip install markdown -i https:<span class="regexp">//mi</span>rrors.aliyun.com<span class="regexp">/pypi/</span>simple/</span><br><span class="line"></span><br><span class="line"><span class="comment"># 腾讯源</span></span><br><span class="line">pip install markdown -i http:<span class="regexp">//mi</span>rrors.cloud.tencent.com<span class="regexp">/pypi/</span>simple</span><br><span class="line"></span><br><span class="line"><span class="comment"># 豆瓣源</span></span><br><span class="line">pip install markdown -i http:<span class="regexp">//</span>pypi.douban.com<span class="regexp">/simple/</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.永久换源：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">csharp复制代码# 清华源</span><br><span class="line">pip config <span class="keyword">set</span> <span class="keyword">global</span>.<span class="built_in">index</span>-url https://pypi.tuna.tsinghua.edu.<span class="keyword">cn</span>/simple</span><br><span class="line"></span><br><span class="line"># 阿里源</span><br><span class="line">pip config <span class="keyword">set</span> <span class="keyword">global</span>.<span class="built_in">index</span>-url https://mirrors.aliyun.<span class="keyword">com</span>/pypi/simple/</span><br><span class="line"></span><br><span class="line"># 腾讯源</span><br><span class="line">pip config <span class="keyword">set</span> <span class="keyword">global</span>.<span class="built_in">index</span>-url http://mirrors.cloud.tencent.<span class="keyword">com</span>/pypi/simple</span><br><span class="line"></span><br><span class="line"># 豆瓣源</span><br><span class="line">pip config <span class="keyword">set</span> <span class="keyword">global</span>.<span class="built_in">index</span>-url http://pypi.douban.<span class="keyword">com</span>/simple/# 换回默认源pip config unset <span class="keyword">global</span>.<span class="built_in">index</span>-url</span><br></pre></td></tr></table></figure>
+
+<h1 id="pip换源的方式"><a href="#pip换源的方式" class="headerlink" title="pip换源的方式"></a><strong>pip换源的方式</strong></h1><blockquote>
+<p>在使用Python安装包工具pip时经常会出现下载很慢的情况，这其中有很大一部分原因和pip的源有关，在我们安装python后，通常python解释器自带pip这个工具，但是这里pip是设置的默认源，也就是官方源：<code>https://pypi.org/simple</code>，这个源在国内的下载速度是很慢的，所以我们为了提高包的下载速度我们可以通过换源来实现。</p>
+</blockquote>
+<h3 id="PYPI国内源路径"><a href="#PYPI国内源路径" class="headerlink" title="PYPI国内源路径"></a><strong>PYPI国内源路径</strong></h3><ul>
+<li>阿里云 <a href="https://link.juejin.cn/?target=http://mirrors.aliyun.com/pypi/simple/">mirrors.aliyun.com&#x2F;pypi&#x2F;simple…</a></li>
+<li>豆瓣(douban) <a href="https://link.juejin.cn/?target=http://pypi.douban.com/simple/">pypi.douban.com&#x2F;simple&#x2F;</a></li>
+<li>清华大学 <a href="https://link.juejin.cn/?target=https://pypi.tuna.tsinghua.edu.cn/simple/">pypi.tuna.tsinghua.edu.cn&#x2F;simple&#x2F;</a></li>
+<li>中国科学技术大学 <a href="https://link.juejin.cn/?target=http://pypi.mirrors.ustc.edu.cn/simple/">pypi.mirrors.ustc.edu.cn&#x2F;simple&#x2F;</a></li>
+</ul>
+<h3 id="换源方式"><a href="#换源方式" class="headerlink" title="换源方式"></a><strong>换源方式</strong></h3><p>这里我们提供两种换源的方式：</p>
+<ol>
+<li>临时换源</li>
+<li>永久换源</li>
+</ol>
+<h4 id="临时换源"><a href="#临时换源" class="headerlink" title="临时换源"></a><strong>临时换源</strong></h4><p>临时换源只需要在pip安装包时，加上一个<code>-i</code>参数后接源的url即可：</p>
+<p>bash复制代码<code># 下载python中的Django包，这里使用的是豆瓣源 pip install django -i http://pypi.douban.com/simple</code> </p>
+<p>显然不是一个一劳永逸的方法，只有下少量包的时候有使用的场景，下面我要介绍永久换源的方法，通过这个方式换源，那么以后我们下载的包就可以全部从这个url中下载了，这样大大减轻了我们的工作量，明显比临时换源的方法更好。</p>
+<h4 id="永久换源（更换默认源）"><a href="#永久换源（更换默认源）" class="headerlink" title="永久换源（更换默认源）"></a><strong>永久换源（更换默认源）</strong></h4><h5 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a><strong>Linux</strong></h5><ol>
+<li>在根目录下创建&#x2F;修改<code>～/.pip/pip.conf</code>pip配置文件；</li>
+<li>进入文件新增&#x2F;修改内容；</li>
+</ol>
+<p>ini复制代码<code>[global] index-url=http://pypi.douban.com/simple [install] trusted-host=pypi.douban.com</code> </p>
+<ol>
+<li>保存文件并退出；</li>
+</ol>
+<h5 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a><strong>Windows</strong></h5><ol>
+<li>windows在<code>%HOMEPATH%\pip\pip.ini</code>中修改上面第二步的内容；(例如：C:\Users\hp\AppData\Roaming\pip\pip.ini)</li>
+<li>保存文件退出；</li>
+</ol>
+<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a><strong>常见问题</strong></h3><ul>
+<li>安装包的时候出现</li>
+</ul>
+<p>csharp复制代码<code>Collecting beautifulsoup4 The repository located at mirrors.aliyun.com is not a trusted or secure host and is being ignored. If this repository is available via HTTPS it is recommended to use HTTPS instead, otherwise you may silence this warning and allow it anyways with ‘–trusted-host mirrors.aliyun.com’. Could not find a version that satisfies the requirement beautifulsoup4 (from versions: ) No matching distribution found for beautifulsoup4</code> </p>
+<ul>
+<li>这是一个问题是在pip镜像升级报警，只需要添加信任源即可：<ul>
+<li>临时换源处理</li>
+<li>css复制代码<code>pip install beautifulsoup4 --trusted-host mirrors.aliyun.com</code></li>
+<li>更换默认源配置（一劳永逸）</li>
+<li>ini复制代码<code>[install] trusted-host=pypi.douban.com</code></li>
+</ul>
+</li>
+</ul>
+<p>作者：waws520<br>链接：<a target="_blank" rel="noopener" href="https://juejin.cn/post/7141566114412101662">https://juejin.cn/post/7141566114412101662</a><br>来源：稀土掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -934,95 +1068,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>CAD全套版本注册机大全<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/CAD%E5%85%A8%E5%A5%97%E7%89%88%E6%9C%AC%E6%B3%A8%E5%86%8C%E6%9C%BA%E5%A4%A7%E5%85%A8.zip">下载</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/06/06/%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95h3c%E9%98%B2%E7%81%AB%E5%A2%99%EF%BC%8C%E9%80%9A%E4%BA%86%E5%B0%B1%E8%B7%91%E5%91%BD%E4%BB%A4%E4%BB%A3%E7%A0%81/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/06/06/%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95h3c%E9%98%B2%E7%81%AB%E5%A2%99%EF%BC%8C%E9%80%9A%E4%BA%86%E5%B0%B1%E8%B7%91%E5%91%BD%E4%BB%A4%E4%BB%A3%E7%A0%81/" class="post-title-link" itemprop="url">真机调试H3C防火墙，通了就跑命令代码</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-06 23:52:16" itemprop="dateCreated datePublished" datetime="2024-06-06T23:52:16+08:00">2024-06-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">其他知识</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><strong>原始命令</strong></p>
-<p>interface GigabitEthernet1&#x2F;0&#x2F;0<br>description wan<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description To_PC<br>security-zone name Management<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;0<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;2<br>quit<br>security-zone name Trust<br>import interface GigabitEthernet1&#x2F;0&#x2F;2<br>security-zone name Untrust<br>import interface GigabitEthernet1&#x2F;0&#x2F;0<br>interface GigabitEthernet1&#x2F;0&#x2F;0<br>description wan<br>ip address dhcp-alloc<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description To_PC<br>ip address 192.168.10.1 255.255.255.0<br>interface GigabitEthernet1&#x2F;0&#x2F;0<br>description wan<br>nat outbound<br>dhcp server ip-pool net10<br>gateway-list 192.168.10.1<br>network 192.168.10.0 mask 255.255.255.0<br>dns-list 114.114.114.114<br>security-policy ip<br>rule 0 name any<br>action pass</p>
-<p><strong>更改命令</strong></p>
-<p>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description wan<br>interface GigabitEthernet1&#x2F;0&#x2F;4<br>description To_PC<br>security-zone name Management<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;2<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;4<br>quit<br>security-zone name Trust<br>import interface GigabitEthernet1&#x2F;0&#x2F;4<br>security-zone name Untrust<br>import interface GigabitEthernet1&#x2F;0&#x2F;2<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description wan<br>ip address dhcp-alloc<br>interface GigabitEthernet1&#x2F;0&#x2F;4<br>description To_PC<br>ip address 192.168.10.1 255.255.255.0<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description wan<br>nat outbound<br>dhcp server ip-pool net10<br>gateway-list 192.168.10.1<br>network 192.168.10.0 mask 255.255.255.0<br>dns-list 114.114.114.114<br>security-policy ip<br>rule 0 name any<br>action pass<br>quit<br>quit<br>save force</p>
-<p><strong>测试端口IP</strong><br>interface GigabitEthernet1&#x2F;0&#x2F;5<br>description To_PC2<br>ip address 192.168.8.1 255.255.255.0</p>
 
       
     </div>

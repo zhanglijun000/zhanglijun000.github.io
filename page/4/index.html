@@ -151,7 +151,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">188</span>
+          <span class="site-state-item-count">189</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -174,6 +174,95 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/06/06/%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95h3c%E9%98%B2%E7%81%AB%E5%A2%99%EF%BC%8C%E9%80%9A%E4%BA%86%E5%B0%B1%E8%B7%91%E5%91%BD%E4%BB%A4%E4%BB%A3%E7%A0%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/06/06/%E7%9C%9F%E6%9C%BA%E8%B0%83%E8%AF%95h3c%E9%98%B2%E7%81%AB%E5%A2%99%EF%BC%8C%E9%80%9A%E4%BA%86%E5%B0%B1%E8%B7%91%E5%91%BD%E4%BB%A4%E4%BB%A3%E7%A0%81/" class="post-title-link" itemprop="url">真机调试H3C防火墙，通了就跑命令代码</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-06-06 23:52:16" itemprop="dateCreated datePublished" datetime="2024-06-06T23:52:16+08:00">2024-06-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">其他知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><strong>原始命令</strong></p>
+<p>interface GigabitEthernet1&#x2F;0&#x2F;0<br>description wan<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description To_PC<br>security-zone name Management<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;0<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;2<br>quit<br>security-zone name Trust<br>import interface GigabitEthernet1&#x2F;0&#x2F;2<br>security-zone name Untrust<br>import interface GigabitEthernet1&#x2F;0&#x2F;0<br>interface GigabitEthernet1&#x2F;0&#x2F;0<br>description wan<br>ip address dhcp-alloc<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description To_PC<br>ip address 192.168.10.1 255.255.255.0<br>interface GigabitEthernet1&#x2F;0&#x2F;0<br>description wan<br>nat outbound<br>dhcp server ip-pool net10<br>gateway-list 192.168.10.1<br>network 192.168.10.0 mask 255.255.255.0<br>dns-list 114.114.114.114<br>security-policy ip<br>rule 0 name any<br>action pass</p>
+<p><strong>更改命令</strong></p>
+<p>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description wan<br>interface GigabitEthernet1&#x2F;0&#x2F;4<br>description To_PC<br>security-zone name Management<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;2<br>undo import interface GigabitEthernet1&#x2F;0&#x2F;4<br>quit<br>security-zone name Trust<br>import interface GigabitEthernet1&#x2F;0&#x2F;4<br>security-zone name Untrust<br>import interface GigabitEthernet1&#x2F;0&#x2F;2<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description wan<br>ip address dhcp-alloc<br>interface GigabitEthernet1&#x2F;0&#x2F;4<br>description To_PC<br>ip address 192.168.10.1 255.255.255.0<br>interface GigabitEthernet1&#x2F;0&#x2F;2<br>description wan<br>nat outbound<br>dhcp server ip-pool net10<br>gateway-list 192.168.10.1<br>network 192.168.10.0 mask 255.255.255.0<br>dns-list 114.114.114.114<br>security-policy ip<br>rule 0 name any<br>action pass<br>quit<br>quit<br>save force</p>
+<p><strong>测试端口IP</strong><br>interface GigabitEthernet1&#x2F;0&#x2F;5<br>description To_PC2<br>ip address 192.168.8.1 255.255.255.0</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -998,93 +1087,6 @@
           <p><a target="_blank" rel="noopener" href="https://openyyy.com/">openyyy.com</a> 开源云音乐 - 多种云音乐格式转MP3</p>
 <p><a target="_blank" rel="noopener" href="https://unlock-music.dev/">https://unlock-music.dev/</a></p>
 <p>WEB版本代码<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E9%85%B7%E7%8B%97%E9%9F%B3%E4%B9%90QQ%E9%9F%B3%E4%B9%90%E5%8A%A0%E5%AF%86%E6%A0%BC%E5%BC%8F%E8%BD%ACMP3%E5%B7%A5%E5%85%B7um-web.extension.v1.10.6.zip">下载</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/02/17/securecrt%E7%BB%BF%E8%89%B2%E7%A0%B4%E8%A7%A3%E7%89%88%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%B7%AF%E7%94%B1%E5%99%A8%E9%98%B2%E7%81%AB%E5%A2%99console%E5%8F%A3%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/17/securecrt%E7%BB%BF%E8%89%B2%E7%A0%B4%E8%A7%A3%E7%89%88%E4%BA%A4%E6%8D%A2%E6%9C%BA%E8%B7%AF%E7%94%B1%E5%99%A8%E9%98%B2%E7%81%AB%E5%A2%99console%E5%8F%A3%E9%93%BE%E6%8E%A5%E5%B7%A5%E5%85%B7%EF%BC%8C/" class="post-title-link" itemprop="url">SecureCRT绿色破解版交换机路由器防火墙Console口链接工具，超级终端</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-02-17 11:07:07" itemprop="dateCreated datePublished" datetime="2024-02-17T11:07:07+08:00">2024-02-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">工具软件</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>SecureCRT绿色破解版 lvsban[下载](<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/SecureCRT%E7%BB%BF%E8%89%B2%E7%A0%B4%E8%A7%A3%E7%89%88">https://www.12361236.com:6688/SecureCRT绿色破解版</a> lvsban.zip)</p>
-<p>SecureCRT绿色破解版vsban_解压密码<a href="http://www.downcc.com[下载](https://www.12361236.com:6688/SecureCRT绿色破解版vsban_解压密码www.downcc.com.zip)">www.downcc.com[下载](https://www.12361236.com:6688/SecureCRT绿色破解版vsban_解压密码www.downcc.com.zip)</a></p>
-<p>超级终端HyperTermina<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/%E8%B6%85%E7%BA%A7%E7%BB%88%E7%AB%AFHyperTermina.zip">下载</a></p>
 
       
     </div>
