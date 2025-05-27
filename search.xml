@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>海康录像机NTP服务器校时地址</title>
+      <link href="/2025/05/27/%E6%B5%B7%E5%BA%B7%E5%BD%95%E5%83%8F%E6%9C%BANTP%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%A1%E6%97%B6%E5%9C%B0%E5%9D%80/"/>
+      <url>/2025/05/27/%E6%B5%B7%E5%BA%B7%E5%BD%95%E5%83%8F%E6%9C%BANTP%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A0%A1%E6%97%B6%E5%9C%B0%E5%9D%80/</url>
+      
+        <content type="html"><![CDATA[<p>NTP服务器地址、端口：</p><p>✔ 设备可连外网：</p><p>地址：ntp.ntsc.ac.cn</p><p>端口：123</p><p>注：其他服务器及端口，您可自行百度查询，以下地址可供测试（仅供参考）</p><p>1）标准NTP服务器地址及端口：地址：time.nist.gov ; 端口：123</p><p>2）国内NTP服务器地址及端口：地址：cn.pool.ntp.org ; 端口：123</p><p>3）其他常用NTP服务器地址及端口：time.windows.com ; 端口：123</p><p>✔ 设备无法连外网：</p><p>您必须自己搭建内网的校时服务器（如果没有自己的校时服务器，则无法使用该服务，校时服务器搭建方法请自行百度）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 其他知识 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>“局域网测速软件，iperf3，iperf3软件版”</title>
       <link href="/2025/02/13/%E2%80%9C%E5%B1%80%E5%9F%9F%E7%BD%91%E6%B5%8B%E9%80%9F%E8%BD%AF%E4%BB%B6%EF%BC%8Ciperf3%EF%BC%8Ciperf3%E8%BD%AF%E4%BB%B6%E7%89%88%E2%80%9D/"/>
       <url>/2025/02/13/%E2%80%9C%E5%B1%80%E5%9F%9F%E7%BD%91%E6%B5%8B%E9%80%9F%E8%BD%AF%E4%BB%B6%EF%BC%8Ciperf3%EF%BC%8Ciperf3%E8%BD%AF%E4%BB%B6%E7%89%88%E2%80%9D/</url>
