@@ -219,7 +219,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+      <time title="修改时间：2025-09-10 18:10:20" itemprop="dateModified" datetime="2025-09-10T18:10:20+08:00">2025-09-10</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -242,18 +242,18 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>有关于centos7获取IP地址的方法主要有两种，1：动态获取ip；2：设置静态IP地址</p>
-<p>在配置网络之前我们先要知道centos的网卡名称是什么，centos7不再使用ifconfig命令，可通过命令 IP addr查看，如图，网卡名为ens32，是没有IP地址的<br><img src="https://www.12361236.com/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8001.png" alt="01"><br>1、动态获取ip（前提是你的路由器已经开启了DHCP）</p>
+<p>在配置网络之前我们先要知道centos的网卡名称是什么，centos7不再使用ifconfig命令，可通过命令 IP addr查看，如图，网卡名为ens32，是没有IP地址的<br><img src="https://www.12361236.com:6688/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8001.png" alt="01"><br>1、动态获取ip（前提是你的路由器已经开启了DHCP）</p>
 <p>修改网卡配置文件 vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens32 (最后一个为网卡名称)</p>
 <p>动态获取IP地址需要修改两处地方即可</p>
 <p>（1）bootproto&#x3D;dhcp</p>
-<p>（2）onboot&#x3D;yes<br><img src="https://www.12361236.com/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8002.png" alt="02"><br>修改后重启一下网络服务即可 systemctl restart network</p>
-<p>[root@mini ~]# systemctl restart network<br>[root@mini ~]#<br>这样动态配置IP地址就设置好了，这个时候再查看一下ip addr 就可以看到已经获取了IP地址，且可以上网（ping 百度）<br><img src="https://www.12361236.com/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8003.png" alt="03"><br>2、配置静态IP地址</p>
+<p>（2）onboot&#x3D;yes<br><img src="https://www.12361236.com:6688/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8002.png" alt="02"><br>修改后重启一下网络服务即可 systemctl restart network</p>
+<p>[root@mini ~]# systemctl restart network<br>[root@mini ~]#<br>这样动态配置IP地址就设置好了，这个时候再查看一下ip addr 就可以看到已经获取了IP地址，且可以上网（ping 百度）<br><img src="https://www.12361236.com:6688/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8003.png" alt="03"><br>2、配置静态IP地址</p>
 <p>设置静态IP地址与动态iIP差不多，也是要修改网卡配置文件 vi &#x2F;etc&#x2F;sysconfig&#x2F;network-scripts&#x2F;ifcfg-ens32 (最后一个为网卡名称)</p>
 <p>（1）bootproto&#x3D;static</p>
 <p>（2）onboot&#x3D;yes</p>
 <p>（3）在最后加上几行，IP地址、子网掩码、网关、dns服务器</p>
 <p>IPADDR&#x3D;192.168.1.160<br>NETMASK&#x3D;255.255.255.0<br>GATEWAY&#x3D;192.168.1.1<br>DNS1&#x3D;119.29.29.29<br>DNS2&#x3D;8.8.8.8<br>（4）重启网络服务</p>
-<p>[root@mini ~]# systemctl restart network<br>[root@mini ~]#<br>DNS服务器可以只配一个，我用的是两个免费的dns服务器，查看IP地址，测试联网<br><img src="https://www.12361236.com/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8004.png" alt="04"><br>[root@mini ~]# ip addr<br>1: lo: mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br>link&#x2F;loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br>inet 127.0.0.1&#x2F;8 scope host lo<br>valid_lft forever preferred_lft forever<br>inet6 ::1&#x2F;128 scope host<br>valid_lft forever preferred_lft forever<br>2: ens32: mtu 1500 qdisc pfifo_fast state UP group default qlen 1000<br>link&#x2F;ether 00:0c:29:d2:42:55 brd ff:ff:ff:ff:ff:ff<br>inet 192.168.1.160&#x2F;24 brd 192.168.1.255 scope global noprefixroute ens32<br>valid_lft forever preferred_lft forever<br>inet6 fe80::f86e:939e:ff9b:9aec&#x2F;64 scope link noprefixroute<br>valid_lft forever preferred_lft forever<br>[root@mini ~]# ping <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a><br>PING <a target="_blank" rel="noopener" href="http://www.a.shifen.com/">www.a.shifen.com</a> (163.177.151.109) 56(84) bytes of data.<br>64 bytes from 163.177.151.109 (163.177.151.109): icmp_seq&#x3D;1 ttl&#x3D;55 time&#x3D;27.5 ms<br>64 bytes from 163.177.151.109 (163.177.151.109): icmp_seq&#x3D;2 ttl&#x3D;55 time&#x3D;35.2 ms<br>^C<br>-– <a target="_blank" rel="noopener" href="http://www.a.shifen.com/">www.a.shifen.com</a> ping statistics —<br>2 packets transmitted, 2 received, 0% packet loss, time 1008ms<br>rtt min&#x2F;avg&#x2F;max&#x2F;mdev &#x3D; 27.570&#x2F;31.425&#x2F;35.281&#x2F;3.859 ms<br>转自<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yhongji/p/9336247.html%EF%BC%8C%E4%BE%B5%E5%88%A0">https://www.cnblogs.com/yhongji/p/9336247.html，侵删</a></p>
+<p>[root@mini ~]# systemctl restart network<br>[root@mini ~]#<br>DNS服务器可以只配一个，我用的是两个免费的dns服务器，查看IP地址，测试联网<br><img src="https://www.12361236.com:6688/Centos7%E8%AE%BE%E7%BD%AEIP%E5%9C%B0%E5%9D%8004.png" alt="04"><br>[root@mini ~]# ip addr<br>1: lo: mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000<br>link&#x2F;loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<br>inet 127.0.0.1&#x2F;8 scope host lo<br>valid_lft forever preferred_lft forever<br>inet6 ::1&#x2F;128 scope host<br>valid_lft forever preferred_lft forever<br>2: ens32: mtu 1500 qdisc pfifo_fast state UP group default qlen 1000<br>link&#x2F;ether 00:0c:29:d2:42:55 brd ff:ff:ff:ff:ff:ff<br>inet 192.168.1.160&#x2F;24 brd 192.168.1.255 scope global noprefixroute ens32<br>valid_lft forever preferred_lft forever<br>inet6 fe80::f86e:939e:ff9b:9aec&#x2F;64 scope link noprefixroute<br>valid_lft forever preferred_lft forever<br>[root@mini ~]# ping <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a><br>PING <a target="_blank" rel="noopener" href="http://www.a.shifen.com/">www.a.shifen.com</a> (163.177.151.109) 56(84) bytes of data.<br>64 bytes from 163.177.151.109 (163.177.151.109): icmp_seq&#x3D;1 ttl&#x3D;55 time&#x3D;27.5 ms<br>64 bytes from 163.177.151.109 (163.177.151.109): icmp_seq&#x3D;2 ttl&#x3D;55 time&#x3D;35.2 ms<br>^C<br>-– <a target="_blank" rel="noopener" href="http://www.a.shifen.com/">www.a.shifen.com</a> ping statistics —<br>2 packets transmitted, 2 received, 0% packet loss, time 1008ms<br>rtt min&#x2F;avg&#x2F;max&#x2F;mdev &#x3D; 27.570&#x2F;31.425&#x2F;35.281&#x2F;3.859 ms<br>转自<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yhongji/p/9336247.html%EF%BC%8C%E4%BE%B5%E5%88%A0">https://www.cnblogs.com/yhongji/p/9336247.html，侵删</a></p>
 
       
     </div>
@@ -889,7 +889,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+      <time title="修改时间：2025-09-10 18:19:07" itemprop="dateModified" datetime="2025-09-10T18:19:07+08:00">2025-09-10</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -911,7 +911,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>爱普生L4151L4153L4156L4158L4163L4165L4166L4167L4168L4169专业清零软件永久版 图解下载爱普生4158清零软件<br>[下载](<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/L4151L4153L4156L4158L4163L4165L4166L4167L4168L4169%E4%B8%93%E4%B8%9A%E6%B8%85%E9%9B%B6%E8%BD%AF%E4%BB%B6%E6%B0%B8%E4%B9%85%E7%89%88">https://www.12361236.com:6688/L4151L4153L4156L4158L4163L4165L4166L4167L4168L4169专业清零软件永久版</a> 图解.zip)<br>关注微信公众号《众物科技》获取解压密码，发送“爱普生4158清零软件”，获取密码。</p>
+          <p>爱普生L4151L4153L4156L4158L4163L4165L4166L4167L4168L4169专业清零软件永久版 图解下载爱普生4158清零软件<br><a target="_blank" rel="noopener" href="https://www.12361236.com:6688/L4151L4153L4156L4158L4163L4165L4166L4167L4168L4169%E4%B8%93%E4%B8%9A%E6%B8%85%E9%9B%B6%E8%BD%AF%E4%BB%B6%E6%B0%B8%E4%B9%85%E7%89%88%E5%9B%BE%E8%A7%A3.zip">下载</a><br>关注微信公众号《众物科技》获取解压密码，发送“爱普生4158清零软件”，获取密码。</p>
 
       
     </div>
