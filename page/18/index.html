@@ -151,7 +151,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">194</span>
+          <span class="site-state-item-count">196</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -174,6 +174,195 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2022/07/31/win10%E5%AE%B6%E5%BA%AD%E7%89%88%E7%B3%BB%E7%BB%9F%E6%B2%A1%E6%9C%89%E7%BB%84%E7%AD%96%E7%95%A5%EF%BC%88gpedit-msc%EF%BC%89%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/07/31/win10%E5%AE%B6%E5%BA%AD%E7%89%88%E7%B3%BB%E7%BB%9F%E6%B2%A1%E6%9C%89%E7%BB%84%E7%AD%96%E7%95%A5%EF%BC%88gpedit-msc%EF%BC%89%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">Win10家庭版系统没有组策略（gpedit.msc）的解决方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-07-31 13:49:36" itemprop="dateCreated datePublished" datetime="2022-07-31T13:49:36+08:00">2022-07-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>组策略是Windows系统的重要组件之一，</p>
+<p>但是在Win10家庭版的系统中默认没有组策略，</p>
+<p>下面就教大家如何办法找回Win10家庭版的组策略（gpedit.msc）</p>
+<p>首先在Win10桌面建立一个记事本文件，然后将以下代码粘贴到记事本中。</p>
+<p>@echo off</p>
+<p>pushd “%~dp0”</p>
+<p>dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &gt;List.txt</p>
+<p>dir &#x2F;b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum &gt;&gt;List.txt</p>
+<p>for &#x2F;f %%i in （’findstr &#x2F;i . List.txt 2^&gt;nul’） do dism &#x2F;online &#x2F;norestart &#x2F;add-package:”C:\Windows\servicing\Packages\%%i”</p>
+<p>pause</p>
+<p>然后操作选择 文件-另存为。</p>
+<p>另存为操作时，在名称后面加一个 .bat或.cmd ,然后下方的文件类型选择为“所有文件”，之后点击“保存”即可。</p>
+<p>接下来在桌面上就可以看到一个 .bat 或.cmd命令运行文件，右键点击该文件，选择“以管理员身份运行”，就可以为Win10家庭版新加入组策略功能了。</p>
+<p>最后验证一下，首先使用 Win+R 打开运行对话框，然后输入打开组策略命令 gpedit.msc 然后点击“确定”就可以成功打开组策略了。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2022/07/31/%E6%B5%8B%E8%AF%95%E9%A1%B5%E6%89%93%E5%8D%B0%E5%A4%B1%E8%B4%A5-0x00000006%EF%BC%8Cwin7%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/07/31/%E6%B5%8B%E8%AF%95%E9%A1%B5%E6%89%93%E5%8D%B0%E5%A4%B1%E8%B4%A5-0x00000006%EF%BC%8Cwin7%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" class="post-title-link" itemprop="url">测试页打印失败 0x00000006，Win7打印机共享解决办法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-07-31 13:48:58" itemprop="dateCreated datePublished" datetime="2022-07-31T13:48:58+08:00">2022-07-31</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E7%94%B5%E8%84%91%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">电脑知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Win7添加共享打印机不能打印，打印测试页提示打印失败 0x00000006 是不是搜了很多方法都是 重启打印服务 都不管用？</p>
+<p>不要绝望，不需要重装系统，试一下以下方法</p>
+<p>安装本地打印机 &gt; 新建端口（Local Port） &gt; 输入路径 （ \主计算机名或IP地址\打印机共享名）&gt; 安装驱动&gt;大功告成! 参考下图</p>
+<p><img src="https://www.12361236.com:6688/%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%A4%B1%E8%B4%A51.jpg"></p>
+<p><img src="https://www.12361236.com:6688/%E5%85%B1%E4%BA%AB%E6%89%93%E5%8D%B0%E6%9C%BA%E5%A4%B1%E8%B4%A52.jpg"></p>
+<p>或者尝试：</p>
+<p>设备和打印机&gt;打印服务器属性&gt;驱动程序&gt;删除对应的驱动 重新添加共享打印机</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -910,178 +1099,6 @@
 <p>排除故障后，通过打开和关闭前盖板，或关闭和打开电源开关，自诊断功能可被重设。</p>
 <p>KM-1620自诊断代码</p>
 <p>C010(A010_) 代码含义：备份内存读&#x2F;写故障（主控板）·读写数据不匹配。 原因分析：备份RAM或主控板不良 解决方法：更换主控板，并检查其是否不正常 C011(A011_)<br>代码含义：备份内容数据故障（主控板）·备份内存指定区域内的数据与指定数值不匹配。<br>原因分析：备份内存数据出现故障。<br>解决方法：将安全开关关闭后再打开，并执行保养项目U020以再次设定备份内存数据的内容。<br>原因分析：备份RAM不良。<br>解决方法：如果重设备份内存内容后显示C011，请更换备份RAM或主控板。<br>C015(A015_) 代码含义：备份内存读&#x2F;写故障（驱动板）·读写数据不匹配。 原因分析：备份RAM或驱动板不良。 解决方法：更换驱动板，并检查其是否不正常。 C016(A016_)<br>－备份内存数据故障（驱动板）·备份内存指定区域内数据与指定数值不匹配。<br>原因分析：备份RAM或主控板不良<br>解决方法：将安全开关关闭后再打开，并执行保养项目U020以再次设定备份内存数据的内容。<br>原因分析：备份RAM不良。<br>解决方法：如果重设备份内存内容后显示C016，请更换备份RAM或驱动板。<br>C0170<br>－计数故障·当电源打开时，主控板驱动板上的总计数和扫描计数都不正常。<br>原因分析：主控板或驱动板不良。<br>解决方法：更换主控板或驱动板，并检查其是否工作正常。<br>C018<br>－机器编号不匹配·当电源打开时，机器编号与主控板和驱动板不匹配。<br>原因分析：未安装正确的EEPROM。<br>解决方法：安装正确的EEPROM。如果问题仍未解决，请怀服务管理部门联系。<br>原因分析：EEPROM数据损坏<br>解决方法：请与服务管理部门联系。<br>C021(A021_) －主控板和驱动板之间通信故障·当电源打开时，机器三秒钟未检测到SBSY低电平和SDIR高电平。 原因分析：接插件端子接触不良。 解决方法：检查主控板上的YC6接插件和驱动板上的YC1接插件的连接情况，以及接插件端子的连通性。如有必要，请对其进行修理或更换。 原因分析：主控板或驱动板不良。 解决方法：更主控板或驱动板，并检查其是否工作正常。 C041(A041_)<br>代码含义：选购的送稿器通信故障·当电源打开时，机器三秒钟未检测到连续五次通信失败。<br>原因分析：未正确安装送稿器。<br>解决方法：检查送稿器安装状态，若安装不当请调节。<br>原因分析：主控板或送稿器驱支板不良。<br>解决方法：更换主控板或送稿器驱动板，并检查其是否工作正常。<br>C042(A042_) －选购的第一供纸盒通信故障·连续五次通信失败。 原因分析：供纸盒安装不正确。 解决方法：检查供纸盒的安装情况，若安装不当请调节。 原因分析：主控板或纸盒控制板不良。 解决方法：更换主控板或纸盒控制板，并检查其是否工作正常。 C050(A050_)<br>代码含义：选购的第二供纸盒通信故障·连续五次通信失败。<br>原因分析：供纸盒安装不正确。<br>解决方法：检查供纸盒的安装情况，若安装不当请调节。<br>原因分析：主控板或纸盒控制板不良。<br>解决方法：更换主控板或纸盒控制板，并检查其是否工作正常。<br>C051(A051_) 代码含义：选购的第三供纸盒通信故障·连续五次通信失败。 原因分析：供纸盒安装不正确。 解决方法：检查供纸盒的安装情况，若安装不当请调节。 原因分析：主控板或纸盒控制板不良。 解决方法：更换主控板或纸盒控制板，并检查其是否工作正常。 C061(A061_)<br>代码含义：位图（DIMM）故障·位图DRAM的数据或地址总线出现故障。<br>原因分析：主控板不良。<br>解决方法：更换主控板，并检查其是否工作正常。<br>原因分析：DIMM安装不正确。<br>解决方法：检查DIMM是否正确插入主控板上的插座。<br>原因分析：DIMM安装不良。<br>解决方法：更换DIMM，并检查其是否工作正常。<br>C062(A062_) 代码含义：内存输入接口故障·图像传输开始后10秒内未完成读入一幅图像。 原因分析：主控板不良 解决方法：更换主控板，并检查其是否工作正常。 C063(A063_)<br>代码含义：DMA故障·在指定时间内，DMA传输压缩的、解压的、旋转的、重定位的或边空的图像数据都不能完成。<br>原因分析：主控板不良<br>解决方法：更换主控板，并检查其是否工作正常。<br>C080(A080_) 代码含义：图像处理故障·J05被检测到两次。 原因分析：驱动板不良。 解决方法：更换驱动板，并检查其是否工作正常。 C200 代码含义：驱动电机故障·驱动电机打开1秒之后，LOCK ALM信号保持高电平1秒。 原因分析：驱动电机的插接件端子接触不良。 解决方法：重新插入接插件。同时请检查接插件电缆连通性是否完好。如果不能连通，请修补或更换电缆。 原因分析：驱动电机的旋转控制电路不良。 解决方法：更换驱动电机。 原因分析：驱动传输系统不良。 解决方法：检查各辊和齿轮是否旋转顺畅。如果不顺畅，请对轴套和齿轮进行润滑。检查是否有齿轮损坏，如果有，请更换。 C310 代码含义：扫描架故障·当电源打开或复印放置在稿台玻璃上的文件时，初始位置不正确。 原因分析：接插件端子接触不良。 解决方法：重新插入接件。同时请检查接件电缆连通性是否完好。如果不能连通，请修补或更换电缆。 原因分析：扫描仪初始位置开关不良。 解决方法：请更换扫描仪初始位置开关。 原因分析：驱动板不良。 解决方法：更换驱动板，并检查其是否工作正常。 原因分析：扫描仪电机不良。 解决方法：更换扫描仪电机。 C320(A320_)<br>代码含义：曝光灯故障·在开始复印前的指示灯检查中，带CCD的遮光板的扫描平均值为128或以上。<br>原因分析：接插件端子接触不良。<br>解决方法：重新插入接插件。同时请检查接插件电缆连通性是否完好。如果不能连通，请修补或更换电缆。<br>原因分析：曝光灯或灯控板不良。<br>解决方法：更换曝光灯或灯控板。<br>原因分析：驱动板不良。<br>解决方法：更换驱动板，并检查其是否工作正常。<br>原因分析：遮光位置不正确。<br>解决方法：调节稿台玻璃（遮光板）的位置。如果故障仍然出现，请更换扫描仪初始位置开关。<br>C330(A330*)<br>代码含义：光学系</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2022/07/30/%E9%97%A8%E7%A6%81%E4%B8%BB%E6%9C%BA%E6%8E%A5%E7%BA%BF%E6%96%B9%E6%B3%95%EF%BC%8C%E6%8E%A5%E7%BA%BF%E5%9B%BE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/07/30/%E9%97%A8%E7%A6%81%E4%B8%BB%E6%9C%BA%E6%8E%A5%E7%BA%BF%E6%96%B9%E6%B3%95%EF%BC%8C%E6%8E%A5%E7%BA%BF%E5%9B%BE/" class="post-title-link" itemprop="url">门禁主机接线方法，接线图</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-07-30 13:40:40" itemprop="dateCreated datePublished" datetime="2022-07-30T13:40:40+08:00">2022-07-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">其他知识</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="https://www.12361236.com:6688/%E9%97%A8%E7%A6%81%E4%B8%BB%E6%9C%BA%E6%8E%A5%E7%BA%BF%E5%9B%BE.jpg"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2022/07/30/%E8%87%AA%E5%8A%A8%E9%97%A8%E6%8E%A7%E5%88%B6%E5%99%A8%EF%BC%8C%E6%8E%A5%E7%BA%BF%E5%9B%BE%EF%BC%8C%E8%AF%B4%E6%98%8E%E4%B9%A6%EF%BC%8C%E7%9B%96%E5%BE%B7gd-120b%EF%BC%8Cgd-125ab/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/07/30/%E8%87%AA%E5%8A%A8%E9%97%A8%E6%8E%A7%E5%88%B6%E5%99%A8%EF%BC%8C%E6%8E%A5%E7%BA%BF%E5%9B%BE%EF%BC%8C%E8%AF%B4%E6%98%8E%E4%B9%A6%EF%BC%8C%E7%9B%96%E5%BE%B7gd-120b%EF%BC%8Cgd-125ab/" class="post-title-link" itemprop="url">自动门控制器，接线图，说明书，盖德GD-120B，GD-125AB</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-07-30 13:40:17" itemprop="dateCreated datePublished" datetime="2022-07-30T13:40:17+08:00">2022-07-30</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">其他知识</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>玻璃自动门，自动开关门控制器接线图，传感器接接线图  </p>
-<p><img src="https://www.12361236.com:6688/%E8%87%AA%E5%8A%A8%E9%97%A8%E6%8E%A7%E5%88%B6%E5%99%A8%E6%8E%A5%E7%BA%BF%E5%9B%BE1.jpg"></p>
-<p><img src="https://www.12361236.com:6688/%E8%87%AA%E5%8A%A8%E9%97%A8%E6%8E%A7%E5%88%B6%E5%99%A8%E6%8E%A5%E7%BA%BF%E5%9B%BE2.jpg"></p>
 
       
     </div>
