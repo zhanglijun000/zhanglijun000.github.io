@@ -151,7 +151,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">196</span>
+          <span class="site-state-item-count">197</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -174,6 +174,96 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/06/10/%E5%A4%8F%E6%99%AE2522%E7%B3%BB%E5%88%97%E8%BF%9B%E5%85%A5%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F%E5%BC%80%E5%90%AFusb%E7%AB%AF%E5%8F%A3%E6%89%93%E5%8D%B0%E6%89%AB%E6%8F%8F%E6%96%B9%E6%B3%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/06/10/%E5%A4%8F%E6%99%AE2522%E7%B3%BB%E5%88%97%E8%BF%9B%E5%85%A5%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F%E5%BC%80%E5%90%AFusb%E7%AB%AF%E5%8F%A3%E6%89%93%E5%8D%B0%E6%89%AB%E6%8F%8F%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">夏普2522系列进入工程模式开启USB端口打印扫描方法</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-06-10 09:52:27" itemprop="dateCreated datePublished" datetime="2024-06-10T09:52:27+08:00">2024-06-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">打印机知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>首先进入工程模式</p>
+<ol>
+<li>机器在复印模式: 依次按下：<strong># * C *</strong> → <strong>26</strong> →开始→<strong>50</strong>→开始，选择第三个3. USB DEVICE 按确认把 <strong>0</strong> 改成 <strong>1</strong> 。按 <strong>C</strong> 退出模式即可</li>
+</ol>
+<p><img src="https://www.12361236.com:6688/%E5%A4%8F%E6%99%AE2522%E5%B7%A5%E7%A8%8B%E6%A8%A1%E5%BC%8F.png"></p>
+<p>打印机密码00000打印机网络管理员密码admin</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -936,111 +1026,6 @@
 <p>firewall-cmd –get-default-zone #查看firewalld服务当前所使用的区域（默认应该是public）<br>firewall-cmd –get-zone-of-interface&#x3D;eno16777728 #查询eno16777728网卡当前在firewalld服务中的区域（默认也应该是public）<br>firewall-cmd –permanent –zone&#x3D;external –change-interface&#x3D;eno16777728 #把firewalld服务中eno16777728网卡的默认区域修改为external，并在系统重启后永久生效。<br>firewall-cmd –get-zone-of-interface&#x3D;eno16777728 #查看eno16777728网卡在当前的区域（应该仍为public）<br>firewall-cmd –permanent –get-zone-of-interface&#x3D;eno16777728 #查看eno16777728网卡在永久模式下的区域（应该为external）<br>firewall-cmd –set-default-zone&#x3D;public #把firewalld服务的当前默认区域设置为public<br>firewall-cmd –get-default-zone #查看firewall当前默认区域<br>firewall-cmd –panic-on #启动firewalld防火墙服务的应急状况模式，阻断一切网络连接（当远程控制服务器时请慎用）<br>firewall-cmd –panic-off #关闭firewall防火墙服务的应急状况模式<br>firewall-cmd –zone&#x3D;public –query-service&#x3D;ssh #查询public区域当前是否允许SSH服务的流量（查到为yes）<br>firewall-cmd –zone&#x3D;public –query-service&#x3D;https #查询public区域当前是否允许HTTPS服务的流量（查到为no）<br>firewall-cmd –zone&#x3D;public –add-service&#x3D;https #设置public区域当前允许请求HTTPS服务的流量通过<br>firewall-cmd –permanent –zone&#x3D;public –add-service&#x3D;https #设置piblic区域允许请求HTTPS服务的流量通过，永久生效<br>firewall-cmd –reload #让firewall服务永久模式下的策略设置立即生效<br>firewall-cmd –permanent –zone&#x3D;public –remove-service&#x3D;http #设置public区域禁止HTTP服务的流量通过，永久生效<br>firewall-cmd –reload<br>firewall-cmd –zone&#x3D;public –add-port&#x3D;8080-8081&#x2F;tcp #设置public区域当前访问8080-8081端口的流量策略设置为允许<br>firewall-cmd –zone&#x3D;public –list-ports #查看public区域当前允许通过的端口</p>
 <p>流量转发命令格式：</p>
 <p>firewall-cmd –permanent –zone&#x3D;&lt;区域&gt; –add-forward-port&#x3D;port&#x3D;&lt;源端口号&gt;:proto&#x3D;&lt;协议&gt;:toport&#x3D;&lt;目标端口号&gt;:toaddr&#x3D;&lt;目标IP地址&gt;</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/06/06/%E7%88%B1%E6%99%AE%E7%94%9Fwf7710%E6%B8%85%E9%9B%B6%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B%E5%BE%85%E6%B5%8B%E8%AF%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/06/06/%E7%88%B1%E6%99%AE%E7%94%9Fwf7710%E6%B8%85%E9%9B%B6%E8%BD%AF%E4%BB%B6%E6%95%99%E7%A8%8B%E5%BE%85%E6%B5%8B%E8%AF%95/" class="post-title-link" itemprop="url">爱普生WF7710清零软件+教程(待测试)</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-06 23:48:37" itemprop="dateCreated datePublished" datetime="2024-06-06T23:48:37+08:00">2024-06-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%89%93%E5%8D%B0%E6%9C%BA%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">打印机知识</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>爱普生WF7710打印机清零软件<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/%E7%88%B1%E6%99%AE%E7%94%9FWF-7710%E6%B8%85%E9%9B%B6%E8%BD%AF%E4%BB%B6+%E5%9B%BE%E8%A7%A3.zip">下载</a></p>
-<p>爱普生WF7710打印机是一款高性能、高清晰度的多功能打印机，广泛应用于家庭和商业办公场所。但是，随着使用时间的增长，会不可避免地面临一些问题，例如无法识别墨盒、打印色彩不准确等问题，这时候我们需要对其进行清零操作。接下来，我将介绍如何重置爱普生WF7710打印机。</p>
-<h2 id="步骤一：关闭打印机"><a href="#步骤一：关闭打印机" class="headerlink" title="步骤一：关闭打印机"></a>步骤一：关闭打印机</h2><p>首先，我们需要关闭打印机并拔出电源线。这样可以避免打印机在清零过程中出现干扰，以确保清零的成功率。</p>
-<h2 id="步骤二：按下指定按键"><a href="#步骤二：按下指定按键" class="headerlink" title="步骤二：按下指定按键"></a>步骤二：按下指定按键</h2><p>接下来，按下并按住打印机背部的“清零”按键，然后打开打印机电源。此时，您会听到“滴滴滴”声，这表明您已进入了打印机的调试模式。</p>
-<h2 id="步骤三：进入调试模式"><a href="#步骤三：进入调试模式" class="headerlink" title="步骤三：进入调试模式"></a>步骤三：进入调试模式</h2><p>在屏幕上显示的菜单中，选择“SSC Service Utility”，然后单击“配置”按钮。在配置选项中，选择“清零计数器”项，并单击“确定”按钮。这时候您需要等待一段时间，直到打印机显示“清零结束”提示信息，表明清零操作已经成功完成。</p>
-<h2 id="步骤四：重启打印机"><a href="#步骤四：重启打印机" class="headerlink" title="步骤四：重启打印机"></a>步骤四：重启打印机</h2><p>清零操作完成后，请按照正常程序关掉打印机，拔掉电源线，然后再重新启动。此时，您的打印机就完成了清零操作，可以正常使用了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>爱普生WF7710打印机的清零过程并不复杂，只需要按照上述步骤操作即可。但是，在进行清零操作之前，建议备份一下打印机的设置和驱动程序，以便在清零操作出现问题时进行还原。此外，如果您不确定清零操作的正确性和安全性，可以先咨询相关技术人员或者专业服务机构，以避免不必要的风险和损失。</p>
-<p>ent软件清零</p>
-<p>ent是一款官方提供的清零软件，可以清零爱普生wf7710打印机的废墨计数。具体操作步骤如下</p>
-<p>ent软件，解压缩后运行。</p>
-<p>2. 连接爱普生wf7710打印机，选择对应的型号和端口。</p>
-<p>entodekter”进行清零。</p>
-<p>itialization”按钮进行清零操作，等待几分钟后打印机会自动重启。</p>
-<p>5. 再次打印测试页，确认废墨计数已清零。</p>
-<p>方法二手动清零废墨计数</p>
-<p>手动清零废墨计数需要进入打印机的服务模式进行设置，具体操作步骤如下</p>
-<p>1. 关闭打印机，按住“停止”、“维护”、“电源”三个按钮不放，然后同时按下“电源”按钮，直到打印机的显示屏上出现“Service Mode”字样。</p>
-<p>kter”，然后按下“OK”按钮。</p>
-<p>ter”进行清零，按下“OK”按钮，再按下“Exit”按钮退出服务模式。</p>
-<p>4. 再次打印测试页，确认废墨计数已清零。</p>
-<p>ent软件进行清零，因为手动清零操作比较复杂，容易出错。</p>
 
       
     </div>
