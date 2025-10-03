@@ -151,7 +151,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">197</span>
+          <span class="site-state-item-count">198</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -174,6 +174,94 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/06/06/%E9%98%B2%E7%81%AB%E5%A2%99%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
+      <meta itemprop="name" content="Parzival">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hello Word">
+      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Hello Word">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/06/06/%E9%98%B2%E7%81%AB%E5%A2%99%E9%85%8D%E7%BD%AE%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">防火墙配置常用命令</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-06-06 23:51:33" itemprop="dateCreated datePublished" datetime="2024-06-06T23:51:33+08:00">2024-06-06</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%85%B6%E4%BB%96%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">其他知识</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>显示所有端口状态：display ip imterface brief<br>查看防火墙的空间所在的端口：display security-zone<br>更改设备名称：sysname</p>
+<p>firewall-cmd –get-default-zone #查看firewalld服务当前所使用的区域（默认应该是public）<br>firewall-cmd –get-zone-of-interface&#x3D;eno16777728 #查询eno16777728网卡当前在firewalld服务中的区域（默认也应该是public）<br>firewall-cmd –permanent –zone&#x3D;external –change-interface&#x3D;eno16777728 #把firewalld服务中eno16777728网卡的默认区域修改为external，并在系统重启后永久生效。<br>firewall-cmd –get-zone-of-interface&#x3D;eno16777728 #查看eno16777728网卡在当前的区域（应该仍为public）<br>firewall-cmd –permanent –get-zone-of-interface&#x3D;eno16777728 #查看eno16777728网卡在永久模式下的区域（应该为external）<br>firewall-cmd –set-default-zone&#x3D;public #把firewalld服务的当前默认区域设置为public<br>firewall-cmd –get-default-zone #查看firewall当前默认区域<br>firewall-cmd –panic-on #启动firewalld防火墙服务的应急状况模式，阻断一切网络连接（当远程控制服务器时请慎用）<br>firewall-cmd –panic-off #关闭firewall防火墙服务的应急状况模式<br>firewall-cmd –zone&#x3D;public –query-service&#x3D;ssh #查询public区域当前是否允许SSH服务的流量（查到为yes）<br>firewall-cmd –zone&#x3D;public –query-service&#x3D;https #查询public区域当前是否允许HTTPS服务的流量（查到为no）<br>firewall-cmd –zone&#x3D;public –add-service&#x3D;https #设置public区域当前允许请求HTTPS服务的流量通过<br>firewall-cmd –permanent –zone&#x3D;public –add-service&#x3D;https #设置piblic区域允许请求HTTPS服务的流量通过，永久生效<br>firewall-cmd –reload #让firewall服务永久模式下的策略设置立即生效<br>firewall-cmd –permanent –zone&#x3D;public –remove-service&#x3D;http #设置public区域禁止HTTP服务的流量通过，永久生效<br>firewall-cmd –reload<br>firewall-cmd –zone&#x3D;public –add-port&#x3D;8080-8081&#x2F;tcp #设置public区域当前访问8080-8081端口的流量策略设置为允许<br>firewall-cmd –zone&#x3D;public –list-ports #查看public区域当前允许通过的端口</p>
+<p>流量转发命令格式：</p>
+<p>firewall-cmd –permanent –zone&#x3D;&lt;区域&gt; –add-forward-port&#x3D;port&#x3D;&lt;源端口号&gt;:proto&#x3D;&lt;协议&gt;:toport&#x3D;&lt;目标端口号&gt;:toaddr&#x3D;&lt;目标IP地址&gt;</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -997,91 +1085,6 @@
           <p>SecureCRT绿色破解版 lvsban<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/SecureCRT%E7%BB%BF%E8%89%B2%E7%A0%B4%E8%A7%A3%E7%89%88lvsban.zip">下载</a></p>
 <p>SecureCRT绿色破解版vsban\解压密码<a target="_blank" rel="noopener" href="http://www.downcc.com/">www.downcc.com</a>  <a target="_blank" rel="noopener" href="https://www.12361236.com:6688/SecureCRT%E7%BB%BF%E8%89%B2%E7%A0%B4%E8%A7%A3%E7%89%88vsban%E8%A7%A3%E5%8E%8B%E5%AF%86%E7%A0%81www.downcc.com.zip">下载</a></p>
 <p>超级终端HyperTermina<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/%E8%B6%85%E7%BA%A7%E7%BB%88%E7%AB%AFHyperTermina.zip">下载</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://12361238.com/2024/02/17/usb%E8%BD%AC9%E9%92%88usb%E8%BD%AC232%E9%A9%B1%E5%8A%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://www.12361236.com:6688/头像.png">
-      <meta itemprop="name" content="Parzival">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hello Word">
-      <meta itemprop="description" content="有钱终成眷属，没钱亲眼目睹">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Hello Word">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/02/17/usb%E8%BD%AC9%E9%92%88usb%E8%BD%AC232%E9%A9%B1%E5%8A%A8/" class="post-title-link" itemprop="url">USB转9针USB转232驱动</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-02-17 11:03:37" itemprop="dateCreated datePublished" datetime="2024-02-17T11:03:37+08:00">2024-02-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-11-09 15:12:50" itemprop="dateModified" datetime="2024-11-09T15:12:50+08:00">2024-11-09</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">工具软件</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>USB转9针USB转232驱动<a target="_blank" rel="noopener" href="https://www.12361236.com:6688/USB%E8%BD%AC9%E9%92%88USB%E8%BD%AC232%E9%A9%B1%E5%8A%A8.zip">下载</a></p>
 
       
     </div>
